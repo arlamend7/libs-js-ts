@@ -1,0 +1,29 @@
+#  Template NodeJS build
+
+#  This template allows you to validate your NodeJS code.
+#  The workflow allows running tests and code linting on the default branch.
+
+image: node:10.15.3
+
+pipelines:
+  branches:
+      master:
+      - step:
+            name: Publish
+            deployment: production
+            script:
+              - npm version minor -m "Upgrade to %s [skip ci]"
+              - pipe: atlassian/npm-publish:0.3.2
+                variables:
+                   NPM_TOKEN: $NPM_TOKEN
+  default:
+    - parallel:
+        - step:
+            name: Build and Test
+            caches:
+              - node
+            script:
+              - npm install
+              - npm test
+        
+
