@@ -1,0 +1,9 @@
+/src/
+/node_modules/
+/test/
+.prettierrc
+webpack.config.js
+tslint.json
+tsconfig.json
+jestconfig.json
+.gitignore
