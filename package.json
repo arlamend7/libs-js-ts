@@ -5,7 +5,7 @@
   "description": "A lib of typescript to help any programer",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",  
-  "publishConfig":{"registry":"https://www.npmjs.com/package/@dev.arlamend7/js-ts"},
+  "publishConfig":{"registry":"https://www.npmjs.com/"},
   "scripts": {
     "test": "jest --config jestconfig.json",
     "format": "prettier --write \"src/**/*.ts\"",
