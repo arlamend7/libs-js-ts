@@ -5,14 +5,14 @@
   "description": "A lib of typescript to help any programer",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",  
-  "publishConfig":{"registry":"my-internal-registry.local"},
   "scripts": {
     "test": "jest --config jestconfig.json",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
     "build": "npm run format && npm run test && tsc && webpack",
     "prepublishOnly": "npm run test",
-    "publish": "npm version patch && npm publish --access=public"
+    "publish": "npm version patch && npm publish --access=public",
+    "bitbucket-pipelines":"pipelines run master"
   },
   "repository": {
     "type": "git",
