@@ -20,5 +20,7 @@ pipelines:
             deployment: production
             script:
               - npm version minor -m "Upgrade to %s [skip ci]"
-              - npm publish
+             - pipe: atlassian/npm-publish:0.3.2
+            variables:
+              NPM_TOKEN: NPM_TOKEN
 
