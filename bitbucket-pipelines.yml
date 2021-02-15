@@ -6,6 +6,15 @@
 image: node:10.15.3
 
 pipelines:
+  - prodution:
+      - step:
+            name: Publish
+            deployment: production
+            script:
+              - npm version minor -m "Upgrade to %s [skip ci]"
+              - pipe: atlassian/npm-publish:0.3.2
+                variables:
+                   NPM_TOKEN: $NPM_TOKEN
   default:
     - parallel:
         - step:
@@ -15,12 +24,5 @@ pipelines:
             script:
               - npm install
               - npm test
-        - step:
-            name: Publish
-            deployment: production
-            script:
-              - npm version minor -m "Upgrade to %s [skip ci]"
-              - pipe: atlassian/npm-publish:0.3.2
-                variables:
-                   NPM_TOKEN: $NPM_TOKEN
+        
 
