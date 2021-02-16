@@ -1,10 +1,1 @@
-export * from './functions/paginar';
-export * from './functions/debounce';
-export * from './models/paginacaoRequest';
-export * from './enumeradores/TipoOrdenacaoEnum';
-export * from './enumeradores/arquivoTipoEnum';
-export * from './models/paginacaoRequest';
-export * from './models/interfaces/paginacaoResponse';
-import './extensions/Date.extension';
-import './extensions/string.extension';
-import './extensions/number.extension';
+import './common';
