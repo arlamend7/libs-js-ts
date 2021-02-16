@@ -1,6 +1,6 @@
-import {Paginar} from "../src/index"
-import '../src/extensions/array.extension'
-import '../src/extensions/number.extension'
+import {Paginar} from "../src/common/index"
+import '../src/common/extensions/array.extension'
+import '../src/common/extensions/number.extension'
 test('Paginar', () => {
   expect(Paginar([])).toStrictEqual({Total : 0, Registros : []});
   expect(Paginar([1])).toStrictEqual({Total : 1, Registros : [1]});
