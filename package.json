@@ -27,6 +27,7 @@
     "webpack-cli": "^4.5.0"
   },
   "dependencies": {
+    "tslib": "^1.14.1",
     "typescript": "^4.1.5"
   },
   "scripts": {
