@@ -1,9 +1,7 @@
 interface Number {
-  [Symbol.iterator]: Generator<number, number[], unknown>;
+  [Symbol.iterator]: () => Generator<number, void, number[]>;
 }
-
-//@ts-ignore
-Number.prototype[Symbol.iterator] = function* () {
+Number.prototype[Symbol.iterator] = function* (): Generator<number, void, number[]> {
   for (let i = 0; i <= this; i++) {
     yield i;
   }
