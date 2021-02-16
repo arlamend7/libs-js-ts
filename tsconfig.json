@@ -3,7 +3,7 @@
       "baseUrl" : "./",
       "target": "es2015",
       "module": "commonjs",
-      "outDir": "./lib",
+      "outDir": "./",
       "noImplicitAny": false,
       "strict": true,
       "declaration": true,
@@ -16,7 +16,15 @@
       "lib": [
         "es2018",
         "dom"
-      ]
+      ],
+      "paths": {
+        "common": [
+          "lib/common"
+        ],
+        "common/*": [
+          "lib/common/*"
+        ]
+      }
     },
     "include": ["src"],
     "exclude": ["node_modules", "**/__tests__/*"]
