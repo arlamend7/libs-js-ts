@@ -1,6 +1,6 @@
 {
   "name": "@dev.arlamend7/js-ts",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "author": "Arlan dos Santos Franklin Mendes",
   "description": "A lib of typescript to help any programer",
   "main": "lib/index.js",
