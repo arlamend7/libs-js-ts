@@ -8,7 +8,7 @@ Array.prototype.isNullOrEmpty = function () {
   return this == null || this.length == 0;
 };
 Array.prototype.Distinct = function <T>(): T[] {
-  return [...new Set(this)];
+  return [...new Set(<T[]>this)];
 };
 Array.prototype.Remove = function <T>(elem: (arg: T) => Boolean): void {
   this.splice(this.findIndex(elem), 1);

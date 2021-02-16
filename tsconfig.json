@@ -16,16 +16,8 @@
       "lib": [
         "es2018",
         "dom"
-      ],
-      "paths": {
-        "common": [
-          "lib/common"
-        ],
-        "common/*": [
-          "lib/common/*"
-        ]
-      }
+      ]
     },
-    "include": ["src/common"],
+    "include": ["src"],
     "exclude": ["node_modules", "**/__tests__/*"]
   }
