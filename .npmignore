@@ -3,6 +3,7 @@
 /test/
 .prettierrc
 webpack.config.js
+bitbucket-pipelines.yml
 tslint.json
 tsconfig.json
 jestconfig.json
