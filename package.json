@@ -10,7 +10,13 @@
     "url": "https://bitbucket.org/arlamend7/libs-js-ts"
   },
   "keywords": [
-    "typescritp"
+    "typescript",
+    "extensions",
+    "javascript",
+    "format",
+    "validators",
+    "web-helper",
+    "dom"
   ],
   "license": "ISC",
   "devDependencies": {
