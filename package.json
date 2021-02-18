@@ -34,7 +34,7 @@
     "test": "jest --config jestconfig.json",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
-    "build": "npm run format && npm run test && tsc && webpack",
+    "build": "npm run format && npm run test && tsc",
     "prepublishOnly": "npm run build"
   }
 }
