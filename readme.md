@@ -1,16 +1,17 @@
-# Javascript && Typescript 
+# Javascript && Typescript
 
 I use a jest library to test all functions
 It`s a package with some extensions, functions and others things.
 Everything that a use almost every day.
-Next week I'll bether my firebase package. 
 
 I'll create a c# library too.
 
 ---
+
 ## Common
 
 #### Extensions providers by this package
+
 ```ts
 interface Array<T> {
   Distinct(): T[];
@@ -38,13 +39,19 @@ interface String {
 ```
 
 #### functions
+
 ```ts
-    function debounce(fn: Function, milissegundos: number, ...args: any[]): () => void;
-    function Paginar<T>(array: T[], request?: PaginacaoRequest): PaginacaoResponse<T>;
+function debounce(fn: Function, milissegundos: number, ...args: any[]): () => void;
+function Paginar<T>(array: T[], request?: PaginacaoRequest): PaginacaoResponse<T>;
 ```
+
 ---
+
 ## Utils
+
 ```ts
+function isRequired: (value: any) => never;
+
 class Validator {
     CPF(str: string): boolean;
     CNPJ(str: string): boolean;
@@ -60,5 +67,18 @@ class Formatter {
     CPF(text: string): string;
     CNPJ(text: string): string;
     CellPhone(text: string): string;
+}
+```
+
+---
+
+## Web
+
+```ts
+class NotificationService {
+  notifications: Map<string, Notification>;
+  addNotification(key: string, Title: string, options?: NotificationOptions): void;
+  Notify(notification: globalThis.Notification): void;
+  NotifyByKey(key: string): void;
 }
 ```

@@ -1,23 +1,23 @@
 export function ValidarCPF(strCPF: string) {
-  let firstDigito = strCPF.substring(9, 10);
-  let secDigito = strCPF.substring(10, 11);
+  const firstDigito = strCPF.substring(9, 10);
+  const secDigito = strCPF.substring(10, 11);
 
   let primDigitoValido = false;
   let secDigitoValido = false;
 
-  let primParte = strCPF.substring(0, 9);
-  let secParte = strCPF.substring(0, 10);
+  const primParte = strCPF.substring(0, 9);
+  const secParte = strCPF.substring(0, 10);
   let soma = 0;
 
   let j = 0;
-  let number;
+  let numbers;
 
   let resto;
   let result;
 
   for (let i = 10; i >= 2; i--) {
-    number = primParte.substring(j, j + 1);
-    soma = soma + parseInt(number, 10) * i;
+    numbers = primParte.substring(j, j + 1);
+    soma = soma + parseInt(numbers, 10) * i;
     j++;
   }
 
@@ -35,8 +35,8 @@ export function ValidarCPF(strCPF: string) {
   j = 0;
   soma = 0;
   for (let i = 11; i >= 2; i--) {
-    number = secParte.substring(j, j + 1);
-    soma = soma + parseInt(number, 10) * i;
+    numbers = secParte.substring(j, j + 1);
+    soma = soma + parseInt(numbers, 10) * i;
     j++;
   }
 
