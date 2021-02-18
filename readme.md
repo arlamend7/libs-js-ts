@@ -7,8 +7,10 @@ Next week I'll bether my firebase package.
 
 I'll create a c# library too.
 
+---
+## Common
 
-### Extensions providers by this package
+#### Extensions providers by this package
 ```ts
 interface Array<T> {
   Distinct(): T[];
@@ -35,13 +37,13 @@ interface String {
 }
 ```
 
-### functions
+#### functions
 ```ts
     function debounce(fn: Function, milissegundos: number, ...args: any[]): () => void;
     function Paginar<T>(array: T[], request?: PaginacaoRequest): PaginacaoResponse<T>;
 ```
-
-### Utils
+---
+## Utils
 ```ts
 class Validator {
     CPF(str: string): boolean;
