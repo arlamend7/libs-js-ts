@@ -27,6 +27,7 @@
     "webpack-cli": "^4.5.0"
   },
   "dependencies": {
+    "tslib": "^1.14.1",
     "typescript": "^4.1.5"
   },
   "scripts": {
@@ -34,6 +35,6 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
     "build": "npm run format && npm run test && tsc && webpack",
-    "prepublishOnly": "npm run test"
+    "prepublishOnly": "npm run build"
   }
 }

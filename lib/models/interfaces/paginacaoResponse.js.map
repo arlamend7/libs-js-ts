@@ -1,0 +1,1 @@
+{"version":3,"file":"paginacaoResponse.js","sourceRoot":"","sources":["../../../src/common/models/interfaces/paginacaoResponse.ts"],"names":[],"mappings":"","sourcesContent":["export interface PaginacaoResponse<T> {\n  Total: number;\n  Registros: T[];\n}\n"]}

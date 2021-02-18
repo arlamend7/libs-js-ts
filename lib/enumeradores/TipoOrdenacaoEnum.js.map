@@ -1,0 +1,1 @@
+{"version":3,"file":"TipoOrdenacaoEnum.js","sourceRoot":"","sources":["../../src/common/enumeradores/TipoOrdenacaoEnum.ts"],"names":[],"mappings":";;;AAAA,IAAY,iBAGX;AAHD,WAAY,iBAAiB;IAC3B,gCAAW,CAAA;IACX,kCAAa,CAAA;AACf,CAAC,EAHW,iBAAiB,GAAjB,yBAAiB,KAAjB,yBAAiB,QAG5B","sourcesContent":["export enum TipoOrdenacaoEnum {\n  Asc = 'ASC',\n  Desc = 'DESC',\n}\n"]}
