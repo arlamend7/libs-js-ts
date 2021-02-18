@@ -1,13 +1,13 @@
 {
-  "name": "@dev.arlamend7/js-ts",
-  "version": "0.2.5",
+  "name": "js-ts",
+  "version": "0.0.1",
   "author": "Arlan dos Santos Franklin Mendes",
   "description": "A lib of typescript to help any programer",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "repository": {
     "type": "bitbucket",
-    "url": "bitbucket+https://bitbucket.org/arlamend7/libs-js-ts"
+    "url": "https://bitbucket.org/arlamend7/libs-js-ts"
   },
   "keywords": [
     "typescritp"
