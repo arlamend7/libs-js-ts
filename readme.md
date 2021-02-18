@@ -1,8 +1,14 @@
-# Start of my typescript package 
+# Javascript && Typescript 
 
-I just try to create a good typescript package
+I use a jest library to test all functions
+It`s a package with some extensions, functions and others things.
+Everything that a use almost every day.
+Next week I'll bether my firebase package. 
 
-## Extensions providers by this package
+I'll create a c# library too.
+
+
+### Extensions providers by this package
 ```ts
 interface Array<T> {
   Distinct(): T[];
@@ -29,13 +35,13 @@ interface String {
 }
 ```
 
-## functions
+### functions
 ```ts
     function debounce(fn: Function, milissegundos: number, ...args: any[]): () => void;
     function Paginar<T>(array: T[], request?: PaginacaoRequest): PaginacaoResponse<T>;
 ```
 
-## Utils
+### Utils
 ```ts
 class Validator {
     CPF(str: string): boolean;
