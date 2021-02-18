@@ -1,6 +1,6 @@
 {
   "name": "js-ts",
-  "version": "0.0.2",
+  "version": "0.0.0",
   "author": "Arlan dos Santos Franklin Mendes",
   "description": "A lib of typescript to help any programer",
   "main": "lib/index.js",
