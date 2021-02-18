@@ -1,10 +1,14 @@
 interface String {
   RemoveAccents(): string;
-  isNullOrEmpty(): boolean;
+  isNullOrWhiteSpace(): boolean;
+  JustNumbers(): string;
 }
-Array.prototype.isNullOrEmpty = function () {
-  return this == null || this.length == 0;
+String.prototype.isNullOrWhiteSpace = function () {
+  return this == null || this == '';
 };
 String.prototype.RemoveAccents = function () {
   return this.normalize('NFD').replace(/[^a-zA-Zs]/g, '');
+};
+String.prototype.JustNumbers = function () {
+  return this.replace(/[^0-9]/g, '');
 };
