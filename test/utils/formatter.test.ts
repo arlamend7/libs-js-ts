@@ -1,4 +1,4 @@
-import { formatter } from '../../src/utils';
+import { formatter } from '../../src/utils/index';
 
 test('formatter CPF', () => {
   expect(formatter.CPF('10161280706')).toBe('101.612.807-06');
