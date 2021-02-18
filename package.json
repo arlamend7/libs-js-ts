@@ -35,6 +35,6 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
     "build": "npm run format && npm run test && tsc && webpack",
-    "prepublishOnly": "npm run build && npm run test"
+    "prepublishOnly": "npm run build"
   }
 }
