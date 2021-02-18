@@ -1,1 +1,1 @@
-export * from './functions/index';
+import './common';
