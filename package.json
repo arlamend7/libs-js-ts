@@ -1,16 +1,22 @@
 {
   "name": "@dev.arlamend7/js-ts",
-  "version": "0.3.2",
+  "version": "1.0.0",
   "author": "Arlan dos Santos Franklin Mendes",
   "description": "A lib of typescript to help any programer",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "repository": {
     "type": "bitbucket",
-    "url": "bitbucket+https://bitbucket.org/arlamend7/libs-js-ts"
+    "url": "https://bitbucket.org/arlamend7/libs-js-ts"
   },
   "keywords": [
-    "typescritp"
+    "typescript",
+    "extensions",
+    "javascript",
+    "format",
+    "validators",
+    "web-helper",
+    "dom"
   ],
   "license": "ISC",
   "devDependencies": {
@@ -34,7 +40,7 @@
     "test": "jest --config jestconfig.json",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
-    "build": "npm run format && npm run test && tsc && webpack",
+    "build": "npm run format && npm run test && tsc",
     "prepublishOnly": "npm run build"
   }
 }

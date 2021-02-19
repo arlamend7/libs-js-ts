@@ -7,6 +7,7 @@
       "noImplicitAny": false,
       "strict": true,
       "declaration": true,
+      "declarationMap": true,
       "experimentalDecorators": true,
       "moduleResolution": "node",
       "importHelpers": true,
@@ -18,7 +19,8 @@
       "noFallthroughCasesInSwitch": true,    /* Report errors for fallthrough cases in switch statement. */
       "lib": [
         "es2018",
-        "dom"
+        "dom",
+        "es2015.promise"
       ],
       "paths": {
         "common": [
