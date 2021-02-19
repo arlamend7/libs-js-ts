@@ -1,7 +1,7 @@
 /node_modules/
-common/
-utils/
-web/
+/common/
+/utils/
+/web/
 /dist/
 index.js
 index.js.map
