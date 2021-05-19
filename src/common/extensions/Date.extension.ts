@@ -1,10 +1,9 @@
 interface Date {
-  SameAs(Date: Date): boolean;
+  SameAs(date: Date): boolean;
   isBeetween(dateStart: Date, dateEnd: Date): boolean;
 }
-
-Date.prototype.SameAs = function (Date: Date) {
-  return this.valueOf() == Date.valueOf();
+Date.prototype.SameAs = function (date: Date) {
+  return this.valueOf() === date.valueOf();
 };
 Date.prototype.isBeetween = function (dateStart: Date, dateEnd: Date): boolean {
   return dateStart.valueOf() < this.valueOf() && this.valueOf() < dateEnd.valueOf();

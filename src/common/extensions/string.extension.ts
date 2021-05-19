@@ -4,7 +4,7 @@ interface String {
   JustNumbers(): string;
 }
 String.prototype.isNullOrWhiteSpace = function () {
-  return this == null || this == '';
+  return this == null || this === '';
 };
 String.prototype.RemoveAccents = function () {
   return this.normalize('NFD').replace(/[^a-zA-Zs]/g, '');

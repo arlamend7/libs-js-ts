@@ -4,19 +4,19 @@ interface Array<T> {
   Sum(map?: (arg: T, index: number) => number, startValue?: number): number;
   Max(map?: (arg: T, index: number) => number): number;
   Min(map?: (arg: T, index: number) => number): number;
-  Remove(elem: (arg: T) => Boolean): void;
+  Remove(elem: (arg: T) => boolean): void;
 }
 Array.prototype.isNullOrEmpty = function () {
-  return this == null || this.length == 0;
+  return this == null || this.length === 0;
 };
 Array.prototype.Distinct = function <T>(): T[] {
-  return [...new Set(<T[]>this)];
+  return [...new Set(this)];
 };
-Array.prototype.Remove = function <T>(elem: (arg: T) => Boolean): void {
+Array.prototype.Remove = function <T>(elem: (arg: T) => boolean): void {
   this.splice(this.findIndex(elem), 1);
 };
 Array.prototype.Sum = function <T>(map?: (arg: T, index: number) => number, startValue: number = 0): number {
-  var sum = (a, b) => a + b;
+  const sum = (a, b) => a + b;
   if (map) return this.map(map).reduce(sum, startValue);
   else return this.reduce(sum, startValue);
 };
